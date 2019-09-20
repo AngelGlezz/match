@@ -32,19 +32,18 @@
 
 .section {
 	background-size: cover;
-	background-color: #0f2835;
+	background-color: #001e3a;
 	width: auto;
 	position: relative;
 	overflow: auto;
 }
 
 #cover {
-	background-image: url(../images/fondohome.png);
+	background-image: url(../images/fondohome.jpg);
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
-	min-height: 1150px;
-	margin-top: 50px;
+	min-height: 1500px;
 }
 
 .inner {
@@ -114,7 +113,7 @@ a {
 	right: 0px;
 	left: 0px;
 	bottom: 0px;
-	top: 590px;
+	top: 1100px;
 }
 
 #logo_cover img {
@@ -136,13 +135,143 @@ a {
 	width: 100%;
 	height: 500px;
 	background-image: url(../images/separador.png);
+	background-color: #001e3a;
 	background-size: 100% 100%;
+	padding-top: 30px;
+}
+
+#video-back {
+	width: 650px;
+	padding: 50px;
+	margin: auto;
+	background-image: url(../images/fondo-video.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#video-cont {
+	width: 100%;
+	height: 375px;
+}
+
+#video-cont img {
+	width: 100%;
+	height: 100%;
 }
 
 #text_juego {
 	width: 490px;
 	height: 55px;
 	margin: 20px auto;
+}
+
+#tickets {
+	padding-top: 100px;
+	background-attachment: fixed;
+	background-image: url(../images/fondo-vs.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.title-section {
+	width: 700px;
+	margin: auto;;
+}
+
+.title-section p {
+	text-align: center;
+	font-size: 60px;
+	color: #fff;
+	font-family: 'Condensed-Bold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.line-title {
+	width: 220px;
+	border: 5px solid #1a75ae;
+	position: relative;
+	left: 305px; 
+}
+
+#subtitle-section {
+	width: 700px;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #fff;
+	font-family: 'Condensed', sans-serif;
+	margin: 90px auto 30px auto;
+}
+
+#txt-tickets {
+	width: 700px;
+	font-family: 'LightCondensed', sans-serif;
+	letter-spacing: 3px;
+	color: #fff;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 20px;
+}
+
+#content-form {
+	width: 900px;
+	margin: auto;
+}
+
+.content-input {
+	width: 47%;
+	float: left;
+}
+
+.content-input:first-child {
+	margin-right: 6%;
+}
+
+.item-input label {
+	float: right;
+	margin-right: 8px;
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Condensed', sans-serif;
+	line-height: 39px;
+}
+
+.item-input input {
+	float: right;
+	font-size: 25px;
+	background-color: #922328;
+	color: #fff;
+	padding: 3px;
+	border: 1px solid #fff;
+}
+
+.item-input {
+	margin-bottom: 8px;
+	overflow: auto;
+}
+
+.separador {
+    width: 100%;
+    clear: both;
+}
+
+#content-term {
+	width: 100%;
+	margin-top: 40px;
+}
+
+#content-term label {
+	font-family: 'Condensed', sans-serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+#cbox {
+	width: 20px;
+	height: 20px;
 }
 
 .text {
@@ -193,7 +322,7 @@ a {
 
 #myFlipper {
 	width: 900px;
-	margin: 90px auto;
+	margin: 150px auto;
 	margin-bottom: 0px;
 }
 
