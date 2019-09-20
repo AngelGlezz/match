@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/page.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mobMenu.css">
+		<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<script type="text/javascript" src="js/page.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<style>
+			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 0 none;
+				font-size: 100%;
+				margin: 0;
+				outline: 0 none;
+				padding: 0;
+				vertical-align: baseline;
+				width: auto;
+			}  
+		</style>
+	</head>
+	<body>
+		<div class="mobile-content">
+			<div class="page">
+				<div class="ui-block"></div>
+				<div class="top_bar">
+					<div class="logo_tb"><a href="/index.html"><img src="images/icon-logo.png"></a></div>	
+					<div class="item_main"><a href="/index.html">PATROCINADORES</a></div>
+					<div class="item_main"><a href="/index.html">PERFILES</a></div>
+					<div class="item_main"><a href="/index.html">TICKETS</a></div>
+					<div class="item_main"><a href="/index.html">HOME</a></div>
+				</div>
+				<div id="cover" class="section">
+					<div class="mobile-header">
+						<div class="main" id="mobile-nav-toggle"><img src="images/menu.png"></div>
+					</div>
+					<div id="logo_cover" class="animated fadeInUp">
+						<img src="images/logo.png">
+						<div class="text" id="juego_txt">La Ciudad de México será testigo de un encuentro generacional excepcional. Experiencia contra juventud. Roger Federer debuta en México, enfrentando a Alexander Zverev, ambos estando dentro del Top 10. El próximo 23 de noviembre la Plaza de Toros será testigo de The Greatest Match con 41 mil almas que vibrarán con un emocionante partido de exhibición que pasará a la historia ya que romperá el récord mundial de mayor número de espectadores. Algo que sólo su Majestad puede lograr. ¿Estás listo para disfrutar de 20 títulos de Grand Slams en México? ¡Tú puedes ser parte de ello!
+						<br><br><p id="nota">*La marca actual es de 35, 681 en un juego donde Kim Clijsters derrotó a Serena Williams en el Rey Balduino en Bruselas, Bélgica, en julio de 2010.</p>
+						</div>
+					</div>
+				</div>
+				<div id="separador"></div>
+				<div id="us" class="section">
+					<div class="flipper hidden" data-reverse="true" data-datetime="2019-11-23 00:00:00" data-template="dd|HH|ii|ss" data-labels="Days|Hours|Minutes|Seconds" id="myFlipper"></div>
+				</div>
+				<div id="content" class="section">
+					
+				</div>
+				<div class="section" id="contact">
+					
+				</div>
+			</div>
+		</div>
+		<div class="mobile-left">
+			<nav class="mean-nav">
+                <ul>
+                	<li class="main_mobile"><a class="space" href="/index.html">HOME</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#us">TICKETS</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#content">PERFILES</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#contact">PATROCINADORES</a></li>
+                    <li class="main_mobile"><a class="space index_main" href="/index.html"></a></li>
+                </ul>
+            </nav>
+		</div>
+		<script src="js/jquery.flipper-responsive.js"></script>
+		<script>
+		  jQuery(function ($) {
+		  $('#myFlipper').flipper('init');
+		});
+		</script>
+		<script type="text/javascript">
+		document.querySelector('.ui-block').addEventListener('click', function (e) {
+			e.stopPropagation();
+			e.preventDefault();
+			document.body.className = document.body.className.replace('open-left', '');
+		});
+		//OPEN MOBILE MENU
+		var menu_toggle_button = document.getElementById('mobile-nav-toggle');
+		menu_toggle_button.onclick = function() {
+			document.querySelector('body').classList.add('open-left');
+		}
+	</script>	
+	</body>
+</html>
