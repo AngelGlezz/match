@@ -296,6 +296,24 @@ a {
 	cursor: pointer;
 }
 
+#prensa {
+	width: 700px;
+	margin: 70px auto;
+}
+
+#txt-prensa {
+	font-family: 'Condensed', sans-serif;
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #fff;
+	text-align: center;
+}
+
+#button-prensa {
+	background-color: #922328;
+	letter-spacing: 2px;
+}
+
 #perfiles {
 	margin-top: 200px;
 }
