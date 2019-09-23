@@ -26,6 +26,10 @@
 	visibility: hidden;
 }
 
+#content-form, #txt-tickets {
+	display: none;
+}
+
 .page {
 	width: 100%;
 	overflow: hidden;
@@ -110,11 +114,12 @@ a {
 #logo_cover {
 	position: absolute;
 	width: 700px;
+	height: 350px;
 	margin: auto;
 	right: 0px;
 	left: 0px;
-	bottom: 0px;
-	top: 1100px;
+	bottom: -1100px;
+	top: 0px;
 }
 
 #logo_cover img {
@@ -122,7 +127,6 @@ a {
 }
 
 #juego_txt {
-	margin-top: 60px;
 	font-size: 25px;
 	font-family: 'LightCondensed', sans-serif;
 	line-height: 33px;
@@ -426,7 +430,87 @@ a {
 	width: 900px;
 	margin: 150px auto;
 	margin-bottom: 0px;
-	font-size: 2.7rem;
+	font-size: 2.6rem;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#content-modal {
+	padding: 200px;
+	width: 79%;
+	height: 70vh;
+}
+
+.content-left {
+    width: 60%;
+    height: 100%;
+    background-color: #000;
+    float: left;
+    overflow: auto;
+}
+
+.content-right {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+    overflow: auto;
+}
+
+.content-img {
+	padding: 90px;
+	width: 79%;
+	height: 80%;
+	position: relative;
+}
+
+.profile-player-img {
+	width: 700px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	margin: auto;
+}
+
+.content-info {
+	width: 400px;
+	margin: 100px auto 0px auto;
+}
+
+.name-title {
+	font-family: 'Condensed-Bold', sans-serif;
+	font-size: 40px;
+	letter-spacing: 8px;
+	margin-bottom: 50px;
+}
+
+.txt-player {
+	font-family: 'Condensed', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.show {
+	text-decoration: none;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
 /* Customize your modal window here, you can add background image too */
@@ -473,11 +557,11 @@ a {
 
 @media screen and (max-width: 1000px) {
 	#cover {
-		min-height: 1300px;
+		min-height: 1350px;
 	}
 
 	#logo_cover {
-		top: 900px;
+		bottom: -1060px;
 	}
 }
 
@@ -505,7 +589,7 @@ a {
 	}
 
 	#logo_cover {
-	    top: 760px;
+	    bottom: -760px;
 	}
 }
 
@@ -516,7 +600,7 @@ a {
 	}
 
 	#logo_cover {
-	    top: 610px;
+	    bottom: -725px;
 	}
 
 	#video-cont {
@@ -551,19 +635,14 @@ a {
 	}	
 }
 
-@media screen and (max-width: 600px) {
-	#table-price {
-		width: 90%;
-	}
-}
-
 @media screen and (max-width: 690px) {
 	#cover {
-		min-height: 810px;
+		min-height: 900px;
 	}
 
 	#logo_cover {
-	    top: 470px;
+		height: 250px;
+	    bottom: -660px;
 	}
 
 	#juego_txt {
@@ -609,13 +688,25 @@ a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	#table-price {
+		width: 90%;
+	}
+
+	#logo_cover {
+		height: 275px;
+	    bottom: -510px;
+	}
+}
+
 @media screen and (max-width: 540px) {
 	#cover {
 		min-height: 750px;
 	}
 
 	#logo_cover {
-	    top: 360px;
+		height: 340px;
+	    bottom: -460px;
 	}
 
 	#separador {
@@ -647,7 +738,8 @@ a {
 
 @media screen and (max-width: 420px) {
 	#logo_cover {
-	    top: 260px;
+		height: 370px;
+	    bottom: -320px;
 	}
 
 	#juego_txt {

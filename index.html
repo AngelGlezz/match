@@ -9,6 +9,10 @@
 		<link rel="stylesheet" type="text/css" href="css/mobMenu.css">
 		<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link  rel = "stylesheet"  href = "js/jquery.fancybox-thumbs.css?v=1.0.7"  type = "text/css"  media = "screen"  /> 
+		<script  type = "text/javascript"  src = "js/jquery.fancybox-thumbs.js?v=1.0.7" ></script>
 		<script type="text/javascript" src="js/page.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script src="js/jquery.validate.js"></script>
@@ -48,7 +52,7 @@
 				</div>
 				<div id="separador">
 					<div id="video-back" class="hidden">
-						<div id="video-cont"><img src="images/video.png"></div>
+						<div id="video-cont"><a class="show-video" rel="lb_info" href="images/mapa.jpg"><img src="images/video.png"></a></div>
 					</div>
 				</div>
 				<div id="time" class="section">
@@ -59,7 +63,7 @@
 						<p>TICKETS</p>
 						<div class="line-title"></div>
 					</div>
-					<div id="subtitle-section" class="hidden">VENTA DE BOLETOS 25 DE SEPTIEMBRE</div>
+					<div id="subtitle-section" class="hidden">VENTA DE BOLETOS 1 DE OCTUBRE</div>
 					<div id="txt-tickets" class="hidden">SÉ EL PRIMERO EN CONOCER LOS DETALLES DE LA VENTA DE BOLETOS.<br>Regístrate para obtener noticias de "The Greatest Match México"</div>
 					<div id="content-form" class="hidden">
 						<form id="form-match" action="" method="post">
@@ -91,38 +95,53 @@
 						</form>
 					</div>
 					<div id="table-price" class="hidden"><img src="images/precios.png"></div>
-					<div class="button hidden">VER MAPA</div>
+					<div class="button hidden">
+						<a class="show" href="images/mapa.jpg">VER MAPA</a>
+					</div>
 					<div id="prensa" class="hidden">
 						<div id="txt-prensa">¿QUIERES ACREDITARTE COMO PRENSA?</div>
-						<div class="button" id="button-prensa">CLICK AQUÍ</div>
+						<div class="button" id="button-prensa"><a href="http://wmedia.com.mx/formas/embed.php?id=24146'" target="_blank">CLICK AQUÍ</a></div>
 					</div>
 					<div class="title-section hidden" id="perfiles">
 						<p>PERFILES</p>
 						<div class="line-title hidden"></div>
 					</div>
-					<div id="profile-cont" class="hidden">
-						<div class="item-profile">
-							<img class="pic-profile" src="images/perfil-federer.png">
+					<div id="profile-cont">
+						<div class="item-profile hidden">
+							<a class="show-profile" rel="lb_info" href="images/perfil-federer.png"><img class="pic-profile" src="images/perfil-federer.png"></a>
 						</div>
-						<div class="item-profile">
-							<img class="pic-profile" src="images/perfil-zverev.png">
+						<div class="item-profile hidden">
+							<a class="show-profile" rel="lb_info" href="images/perfil-zverev.png"><img class="pic-profile" src="images/perfil-zverev.png"></a>
 						</div>
-						<div class="item-profile">
-							<img class="pic-profile" src="images/perfil-santi.png">
+						<div class="item-profile hidden">
+							<a class="show-profile" rel="lb_info" href="images/perfil-santi.png"><img class="pic-profile" src="images/perfil-santi.png"></a>
 						</div>
-						<div class="item-profile">
-							<img class="pic-profile" src="images/perfil-bryan.png">
+						<div class="item-profile hidden">
+							<a class="show-profile" rel="lb_info" href="images/perfil-bryan.png"><img class="pic-profile" src="images/perfil-bryan.png"></a>
 						</div>
 					</div>
 				</div>
 				<div id="sponsors"></div>
 				<div id="footer-page">
 					<div id="content-item-footer">
-						<div class="item-footer"><img src="images/twitter.png"></div>
-						<div class="item-footer"><img src="images/insta.png"></div>
-						<div class="item-footer"><img src="images/face.png"></div>
+						<div class="item-footer"><a href="https://twitter.com/mextenis" target="_blank"><img src="images/twitter.png"></a></div>
+						<div class="item-footer"><a href="https://www.instagram.com/mextenis/" target="_blank"><img src="images/insta.png"></a></div>
+						<div class="item-footer"><a href="https://www.facebook.com/MextenisOficial/" target="_blank"><img src="images/face.png"></a></div>
 					</div>
 				</div>
+				<!--div id="modal">
+					<div id="content-modal">
+						<div class="content-left">
+							<div class="content-img"><img id="profile-player-img" src=""></div>
+						</div>
+						<div class="content-right">
+							<div class="content-info">
+								<div class="name-title">Roger Federer</div>
+								<div class="txt-player">México es el segundo mercado más importante para la NFL y necesitaba de la mejor agencia para la creación de contenidos y corresponder al gran apoyo de los aficionados mexicanos en redes sociales. <br>Desde mayo 2018, Tiki Taka funge como la agencia oficial de la NFL en México con un diseño de "jugadas" a la medida. Operamos el 100% de sus contenidos así como su estrategia digital y de redes sociales. También les llevamos sus cuentas en español para el mercado hispano. </div>
+							</div>
+						</div>
+					</div>
+				</div-->
 			</div>
 		</div>
 		<div class="mobile-left">
