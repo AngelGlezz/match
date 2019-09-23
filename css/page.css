@@ -28,6 +28,7 @@
 
 .page {
 	width: 100%;
+	overflow: hidden;
 }
 
 .section {
@@ -170,7 +171,7 @@ a {
 	padding-top: 100px;
 	background-attachment: fixed;
 	background-image: url(../images/fondo-vs.png);
-	background-size: 100% 100%;
+	background-size: 100% 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -312,6 +313,7 @@ a {
 #button-prensa {
 	background-color: #922328;
 	letter-spacing: 2px;
+	line-height: 35px;
 }
 
 #perfiles {
@@ -346,9 +348,19 @@ a {
 	margin-right: 0px;
 }
 
+#sponsors {
+	width: 100%;
+	height: 465px;
+	background-color: #001e3a;
+	background-image: url(../images/sponsor-cont.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 #footer-page {
 	width: 100%;
-	height: 60px;
+	height: 40px;
 	background-color: #001e3a;
 	padding: 20px 0px;
 }
@@ -356,6 +368,7 @@ a {
 #content-item-footer {
 	width: 700px;
 	margin: auto;
+	overflow: auto;
 }
 
 .item-footer {
@@ -413,6 +426,7 @@ a {
 	width: 900px;
 	margin: 150px auto;
 	margin-bottom: 0px;
+	font-size: 2.7rem;
 }
 
 /* Customize your modal window here, you can add background image too */
@@ -446,15 +460,83 @@ a {
 	font-size: 12px;
 }
 
+@media screen and (max-width: 1130px) {
+	#cover {
+		background-size: 165%;
+		min-height: 1000px;
+	}
+
+	#sponsors {
+		height: 370px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#cover {
+		min-height: 1300px;
+	}
+
+	#logo_cover {
+		top: 900px;
+	}
+}
+
 @media screen and (max-width: 930px) {
 	#logo_cover, #myFlipper {
+		width: 91%;
+	}
+
+	#content-form {
 		width: 90%;
+	}
+
+	.item-input input {
+		width: 97%;
+	}
+
+	#sponsors {
+		background-image: url(../images/sponsor-cont-middle.png);
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#cover {
+		min-height: 1150px;
+	}
+
+	#logo_cover {
+	    top: 760px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	#cover {
 		margin-top: 0px;
+		min-height: 1040px;
+	}
+
+	#logo_cover {
+	    top: 610px;
+	}
+
+	#video-cont {
+		width: 90%;
+	}
+
+	#profile-cont, .title-section, #prensa, #txt-tickets, #subtitle-section {
+		width: 100%;
+	}
+
+	#tickets {
+		background-image: url(../images/FONDO.png);
+	}
+
+	#content-item-footer {
+		width: 90%;
+	}
+
+	.item-profile {
+		width: 153px;
 	}
 
 	.top_bar {
@@ -466,12 +548,127 @@ a {
 	    position: absolute;
 	    top: 15px;
 	    left: 20px;
+	}	
+}
+
+@media screen and (max-width: 600px) {
+	#table-price {
+		width: 90%;
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 690px) {
 	#cover {
-		min-height: 1300px;
+		min-height: 810px;
+	}
+
+	#logo_cover {
+	    top: 470px;
+	}
+
+	#juego_txt {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	#video-back {
+		width: 100%;
+		padding: 25px 0px 0px 25px;
+	}
+
+	#video-cont {
+		height: auto;
+	}
+
+	#profile-cont {
+		width: 90%;
+		height: auto;
+		overflow: auto;
+	}
+
+	.item-profile {
+		width: 45%;
+		margin-right: 10%;
+		height: auto;
+	}
+
+	.item-profile:nth-child(even) {
+		margin-right: 0%;
+	}
+
+	.item-profile:nth-child(1) {
+		margin-bottom: 25px;
+	}
+
+	.item-profile:hover {
+		border: none;
+	}
+
+	#sponsors {
+	    height: 300px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#cover {
+		min-height: 750px;
+	}
+
+	#logo_cover {
+	    top: 360px;
+	}
+
+	#separador {
+		height: 350px;
+	}
+
+	#myFlipper {
+	    margin-top: 70px;
+	}
+
+	.line-title {
+		left: 160px;
+	}
+
+	.content-input {
+		width: 100%;
+	}
+
+	.item-profile {
+		width: 200px;
+		margin: 0px auto 20px auto!important;
+		float: none;
+	}
+
+	#sponsors {
+	    height: 200px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#logo_cover {
+	    top: 260px;
+	}
+
+	#juego_txt {
+		font-size: 17px;
+	}
+
+	#video-back {
+		padding: 16px 0px 0px 16px;
+	}
+
+	.line-title {
+	    left: 110px;
+	    width: 180px;
+	}
+
+	#content-term {
+		width: 80%;
+	}
+
+	#sponsors {
+	    height: 140px;
 	}
 }
 
