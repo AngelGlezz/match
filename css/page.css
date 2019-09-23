@@ -120,7 +120,7 @@ a {
 }
 
 #nota {
-	font-size: 15px;
+	font-size: 20px;
 }
 
 #separador {
@@ -190,7 +190,7 @@ a {
 #subtitle-section {
 	width: 700px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 45px;
 	letter-spacing: 3px;
 	color: #fff;
 	font-family: 'Condensed', sans-serif;
@@ -534,7 +534,7 @@ a {
 @media screen and (max-width: 1130px) {
 	#cover {
 		background-size: 165%;
-		min-height: 1000px;
+		min-height: 1060px;
 	}
 
 	#sponsors {
@@ -544,11 +544,15 @@ a {
 
 @media screen and (max-width: 1000px) {
 	#cover {
-		min-height: 1350px;
+		min-height: 1020px;
 	}
 }
 
 @media screen and (max-width: 930px) {
+	#cover {
+		min-height: 940px;
+	}
+
 	#myFlipper, #juego_txt {
 		width: 91%;
 	}
@@ -568,14 +572,14 @@ a {
 
 @media screen and (max-width: 850px) {
 	#cover {
-		min-height: 1150px;
+		min-height: 860px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	#cover {
 		margin-top: 0px;
-		min-height: 1040px;
+		min-height: 780px;
 	}
 
 	#video-cont {
@@ -612,12 +616,13 @@ a {
 
 @media screen and (max-width: 690px) {
 	#cover {
-		min-height: 900px;
+		min-height: 710px;
 	}
 
 	#juego_txt {
 		font-size: 20px;
 		line-height: 25px;
+		margin: 40px auto;
 	}
 
 	#video-back {
@@ -674,7 +679,7 @@ a {
 
 @media screen and (max-width: 540px) {
 	#cover {
-		min-height: 750px;
+		min-height: 450px;
 	}
 
 	#separador {
@@ -702,9 +707,26 @@ a {
 	#sponsors {
 	    height: 200px;
 	}
+
+	#footer-page {
+		height: 25px;
+	}
+
+	.item-footer {
+		height: 20px;
+		margin-left: 35px;
+	}
+
+	.img-footer {
+		height: 100%;
+	}
 }
 
 @media screen and (max-width: 420px) {
+	#cover {
+		min-height: 350px;
+	}
+
 	#juego_txt {
 		font-size: 17px;
 	}
