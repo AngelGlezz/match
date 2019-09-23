@@ -26,7 +26,7 @@
 	visibility: hidden;
 }
 
-#content-form, #txt-tickets {
+#content-form, #txt-tickets, .card-mov {
 	display: none;
 }
 
@@ -48,7 +48,7 @@
 	background-size: auto;
 	background-position: top;
 	background-repeat: no-repeat;
-	min-height: 1500px;
+	min-height: 1150px;
 }
 
 .inner {
@@ -111,25 +111,12 @@ a {
 	border-bottom: 0px!important;
 }
 
-#logo_cover {
-	position: absolute;
-	width: 700px;
-	height: 350px;
-	margin: auto;
-	right: 0px;
-	left: 0px;
-	bottom: -1100px;
-	top: 0px;
-}
-
-#logo_cover img {
-	width: 100%;
-}
-
 #juego_txt {
 	font-size: 25px;
 	font-family: 'LightCondensed', sans-serif;
 	line-height: 33px;
+	width: 700px;
+	margin: 90px auto;
 }
 
 #nota {
@@ -559,14 +546,10 @@ a {
 	#cover {
 		min-height: 1350px;
 	}
-
-	#logo_cover {
-		bottom: -1060px;
-	}
 }
 
 @media screen and (max-width: 930px) {
-	#logo_cover, #myFlipper {
+	#myFlipper, #juego_txt {
 		width: 91%;
 	}
 
@@ -587,20 +570,12 @@ a {
 	#cover {
 		min-height: 1150px;
 	}
-
-	#logo_cover {
-	    bottom: -760px;
-	}
 }
 
 @media screen and (max-width: 767px) {
 	#cover {
 		margin-top: 0px;
 		min-height: 1040px;
-	}
-
-	#logo_cover {
-	    bottom: -725px;
 	}
 
 	#video-cont {
@@ -638,11 +613,6 @@ a {
 @media screen and (max-width: 690px) {
 	#cover {
 		min-height: 900px;
-	}
-
-	#logo_cover {
-		height: 250px;
-	    bottom: -660px;
 	}
 
 	#juego_txt {
@@ -693,20 +663,18 @@ a {
 		width: 90%;
 	}
 
-	#logo_cover {
-		height: 275px;
-	    bottom: -510px;
+	.card-desk {
+		display: none;
+	}
+
+	.card-mov {
+		display: block;
 	}
 }
 
 @media screen and (max-width: 540px) {
 	#cover {
 		min-height: 750px;
-	}
-
-	#logo_cover {
-		height: 340px;
-	    bottom: -460px;
 	}
 
 	#separador {
@@ -737,11 +705,6 @@ a {
 }
 
 @media screen and (max-width: 420px) {
-	#logo_cover {
-		height: 370px;
-	    bottom: -320px;
-	}
-
 	#juego_txt {
 		font-size: 17px;
 	}
