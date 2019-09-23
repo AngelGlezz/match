@@ -31,10 +31,10 @@
 				<div class="ui-block"></div>
 				<div class="top_bar">
 					<div class="logo_tb"><a href="/index.html"><img src="images/icon-logo.png"></a></div>	
-					<div class="item_main"><a href="/index.html">PATROCINADORES</a></div>
-					<div class="item_main"><a href="/index.html">PERFILES</a></div>
-					<div class="item_main"><a href="/index.html">TICKETS</a></div>
-					<div class="item_main"><a href="/index.html">HOME</a></div>
+					<div class="item_main"><a href="#sponsors">PATROCINADORES</a></div>
+					<div class="item_main"><a href="#perfiles">PERFILES</a></div>
+					<div class="item_main"><a href="#tickets">TICKETS</a></div>
+					<div class="item_main"><a href="#cover">HOME</a></div>
 				</div>
 				<div id="cover" class="section">
 					<div class="mobile-header">
@@ -55,13 +55,13 @@
 					<div class="flipper hidden" data-reverse="true" data-datetime="2019-11-23 00:00:00" data-template="dd|HH|ii|ss" data-labels="Days|Hours|Minutes|Seconds" id="myFlipper"></div>
 				</div>
 				<div id="tickets" class="section">
-					<div class="title-section">
+					<div class="title-section hidden">
 						<p>TICKETS</p>
 						<div class="line-title"></div>
 					</div>
-					<div id="subtitle-section">VENTA DE BOLETOS 25 DE SEPTIEMBRE</div>
-					<div id="txt-tickets">SÉ EL PRIMERO EN CONOCER LOS DETALLES DE LA VENTA DE BOLETOS.<br>Regístrate para obtener noticias de "The Greatest Match México"</div>
-					<div id="content-form">
+					<div id="subtitle-section" class="hidden">VENTA DE BOLETOS 25 DE SEPTIEMBRE</div>
+					<div id="txt-tickets" class="hidden">SÉ EL PRIMERO EN CONOCER LOS DETALLES DE LA VENTA DE BOLETOS.<br>Regístrate para obtener noticias de "The Greatest Match México"</div>
+					<div id="content-form" class="hidden">
 						<form id="form-match" action="" method="post">
 							<div class="content-input">
 								<div class="item-input">
@@ -90,22 +90,45 @@
 							<div id="send-form" class="button">ENVIAR</div>
 						</form>
 					</div>
-					<div id="table-price"><img src="images/precios.png"></div>
-					<div class="button">VER MAPA</div>
+					<div id="table-price" class="hidden"><img src="images/precios.png"></div>
+					<div class="button hidden">VER MAPA</div>
+					<div class="title-section hidden" id="perfiles">
+						<p>PERFILES</p>
+						<div class="line-title hidden"></div>
+					</div>
+					<div id="profile-cont" class="hidden">
+						<div class="item-profile">
+							<img class="pic-profile" src="images/perfil-federer.png">
+						</div>
+						<div class="item-profile">
+							<img class="pic-profile" src="images/perfil-zverev.png">
+						</div>
+						<div class="item-profile">
+							<img class="pic-profile" src="images/perfil-santi.png">
+						</div>
+						<div class="item-profile">
+							<img class="pic-profile" src="images/perfil-bryan.png">
+						</div>
+					</div>
 				</div>
-				<div class="profile" id="contact">
-					
+				<div id="sponsors" class="hidden"></div>
+				<div id="footer-page">
+					<div id="content-item-footer">
+						<div class="item-footer"><img src="images/twitter.png"></div>
+						<div class="item-footer"><img src="images/insta.png"></div>
+						<div class="item-footer"><img src="images/face.png"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="mobile-left">
 			<nav class="mean-nav">
                 <ul>
-                	<li class="main_mobile"><a class="space" href="/index.html">HOME</a></li>
-                    <li class="main_mobile"><a class="space" href="/index.html#us">TICKETS</a></li>
-                    <li class="main_mobile"><a class="space" href="/index.html#content">PERFILES</a></li>
-                    <li class="main_mobile"><a class="space" href="/index.html#contact">PATROCINADORES</a></li>
-                    <li class="main_mobile"><a class="space index_main" href="/index.html"></a></li>
+                	<li class="main_mobile"><a class="space" href="#cover">HOME</a></li>
+                    <li class="main_mobile"><a class="space" href="#tickets">TICKETS</a></li>
+                    <li class="main_mobile"><a class="space" href="#perfiles">PERFILES</a></li>
+                    <li class="main_mobile"><a class="space" href="#sponsors">PATROCINADORES</a></li>
+                    <li class="main_mobile"><a class="space index_main" href="#cover"></a></li>
                 </ul>
             </nav>
 		</div>

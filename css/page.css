@@ -258,8 +258,8 @@ a {
 }
 
 #content-term {
-	width: 100%;
-	margin-top: 40px;
+	width: 370px;
+	margin: 40px auto 0px auto;
 }
 
 #content-term label {
@@ -272,6 +272,77 @@ a {
 #cbox {
 	width: 20px;
 	height: 20px;
+}
+
+#table-price {
+	width: 580px;
+	margin: 60px auto 0px auto;
+}
+
+#table-price img {
+	width: 100%;
+}
+
+.button {
+	width: 171px;
+	margin: 40px auto 0px auto;
+	background-color: #DEA937;
+	color: #fff;
+	font-family: 'Condensed', sans-serif;
+	letter-spacing: 10px;
+	line-height: 30px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#perfiles {
+	margin-top: 200px;
+}
+
+#profile-cont {
+	overflow: auto;
+	width: 697px;
+	height: 240px;
+	margin: 90px auto;
+}
+
+.pic-profile {
+	width: 100%;
+	height: 100%;
+}
+
+.item-profile {
+	width: 155px;
+	height: 208px;
+	margin-right: 20px;
+	float: left;
+	cursor: pointer;
+}
+
+.item-profile:hover {
+	border: 8px solid #1a75ae;
+}
+
+.item-profile:last-child {
+	margin-right: 0px;
+}
+
+#footer-page {
+	width: 100%;
+	height: 60px;
+	background-color: #001e3a;
+	padding: 20px 0px;
+}
+
+#content-item-footer {
+	width: 700px;
+	margin: auto;
+}
+
+.item-footer {
+	float: right;
+	margin-left: 50px;
 }
 
 .text {
