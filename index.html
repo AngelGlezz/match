@@ -6,7 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/page.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/mobMenu.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
@@ -30,9 +30,7 @@
 		</style>
 	</head>
 	<body>
-		<div class="mobile-content">
 			<div class="page">
-				<div class="ui-block"></div>
 				<div class="top_bar">
 					<div class="logo_tb"><a href="#cover"><img src="images/icon-logo.png"></a></div>	
 					<div class="item_main"><a href="#sponsors">PATROCINADORES</a></div>
@@ -40,14 +38,24 @@
 					<div class="item_main"><a href="#tickets">TICKETS</a></div>
 					<div class="item_main"><a href="#cover">HOME</a></div>
 				</div>
-				<div id="cover" class="section">
-					<div class="mobile-header">
-						<div class="main" id="mobile-nav-toggle"><img src="images/menu.png"></div>
+				<div class="topnav">
+					<a href="#home" class="active"><img src="images/icon-logo.png"></a>
+					<!-- Navigation links (hidden by default) -->
+					<div id="myLinks">
+						<a href="#cover">HOME</a>
+						<a href="#tickets">TICKETS</a>
+						<a href="#perfiles">PERFILES</a>
+						<a href="#sponsors">PATROCINADORES</a>
 					</div>
+					<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</div>
+				<div id="cover" class="section"></div>
 				<div class="section" id="description">
 					<div class="text hidden" id="juego_txt">
-						La Ciudad de México será testigo de un encuentro generacional excepcional. Experiencia contra juventud. Roger Federer debuta en México, enfrentando a Alexander Zverev, ambos estando dentro del Top 10. El próximo 23 de noviembre la Plaza de Toros será testigo de The Greatest Match con 41 mil almas que vibrarán con un emocionante partido de exhibición que pasará a la historia ya que romperá el récord mundial de mayor número de espectadores. Algo que sólo su Majestad puede lograr. ¿Estás listo para disfrutar de 20 títulos de Grand Slams en México? ¡Tú puedes ser parte de ello!
+						La Plaza México será testigo de un encuentro generacional excepcional. Experiencia contra juventud. Roger Federer debutará en México, enfrentando a Alexander Zverev. El 23 de noviembre 41 mil almas vibrarán en The Greatest Match con un emocionante partido de exhibición que pasará a la historia. ¡Sé parte de ello!
 						<br><br><p id="nota">*La marca actual es de 35,681 en un juego donde Kim Clijsters derrotó a Serena Williams en el Rey Balduino en Bruselas, Bélgica, en julio de 2010.</p>
 					</div>
 				</div>
@@ -57,6 +65,9 @@
 					</div>
 				</div>
 				<div id="time" class="section">
+					<div class="title-section hidden">
+						<p>COUNTDOWN PARA<br>VENTA DE BOLETOS</p>
+					</div>
 					<div class="flipper hidden" data-reverse="true" data-datetime="2019-10-01 10:00:00" data-template="dd|HH|ii|ss" data-labels="Días|Horas|Minutos|Segundos" id="myFlipper"></div>
 				</div>
 				<div id="tickets" class="section">
@@ -134,34 +145,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="mobile-left">
-			<nav class="mean-nav">
-                <ul>
-                	<li class="main_mobile"><a class="space" href="#cover">HOME</a></li>
-                    <li class="main_mobile"><a class="space" href="#tickets">TICKETS</a></li>
-                    <li class="main_mobile"><a class="space" href="#perfiles">PERFILES</a></li>
-                    <li class="main_mobile"><a class="space" href="#sponsors">PATROCINADORES</a></li>
-                    <li class="main_mobile"><a class="space index_main" href="#cover"></a></li>
-                </ul>
-            </nav>
-		</div>
 		<script src="js/jquery.flipper-responsive.js"></script>
 		<script>
+		  	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+			    x.style.display = "none";
+			  } else {
+			    x.style.display = "block";
+			  }
+			}
+
+
 		  jQuery(function ($) {
-		  $('#myFlipper').flipper('init');
-		});
-		</script>
-		<script type="text/javascript">
-		document.querySelector('.ui-block').addEventListener('click', function (e) {
-			e.stopPropagation();
-			e.preventDefault();
-			document.body.className = document.body.className.replace('open-left', '');
-		});
-		//OPEN MOBILE MENU
-		var menu_toggle_button = document.getElementById('mobile-nav-toggle');
-		menu_toggle_button.onclick = function() {
-			document.querySelector('body').classList.add('open-left');
-		}
-	</script>	
+			  $('#myFlipper').flipper('init');
+			});
+		</script>	
 	</body>
 </html>

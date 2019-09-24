@@ -26,7 +26,7 @@
 	visibility: hidden;
 }
 
-#content-form, #txt-tickets, .card-mov {
+#content-form, #txt-tickets, .card-mov, .topnav {
 	display: none;
 }
 
@@ -130,6 +130,10 @@ a {
 	background-color: #001e3a;
 	background-size: 100% 100%;
 	padding-top: 30px;
+}
+
+#time {
+	padding-top: 90px;
 }
 
 #video-back {
@@ -415,7 +419,7 @@ a {
 
 #myFlipper {
 	width: 900px;
-	margin: 150px auto;
+	margin: 80px auto;
 	margin-bottom: 0px;
 	font-size: 2.6rem;
 }
@@ -500,6 +504,10 @@ a {
 	color: #fff;
 }
 
+.active img {
+	height: 30px;
+}
+
 /* Customize your modal window here, you can add background image too */
 #boxes #dialog {
     width:300px;
@@ -531,10 +539,67 @@ a {
 	font-size: 12px;
 }
 
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #CC911E;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #0A1219;
+  opacity: 0.8;
+  color: white;
+}
+
+.fa {
+	position: relative;
+	top: 10px;
+}
+
+.icon {
+	height: 35px;
+}
+
+#myLinks a {
+	background-color: #0A1219;
+	opacity: 0.8;
+}
+
 @media screen and (max-width: 1130px) {
 	#cover {
 		background-size: 165%;
-		min-height: 1060px;
+		min-height: 1200px;
 	}
 
 	#sponsors {
@@ -544,13 +609,13 @@ a {
 
 @media screen and (max-width: 1000px) {
 	#cover {
-		min-height: 1020px;
+		min-height: 1100px;
 	}
 }
 
 @media screen and (max-width: 930px) {
 	#cover {
-		min-height: 940px;
+		min-height: 990px;
 	}
 
 	#myFlipper, #juego_txt {
@@ -572,14 +637,14 @@ a {
 
 @media screen and (max-width: 850px) {
 	#cover {
-		min-height: 860px;
+		min-height: 920px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	#cover {
 		margin-top: 0px;
-		min-height: 780px;
+		min-height: 840px;
 	}
 
 	#video-cont {
@@ -611,12 +676,16 @@ a {
 	    position: absolute;
 	    top: 15px;
 	    left: 20px;
+	}
+
+	.topnav {
+		display: block;
 	}	
 }
 
 @media screen and (max-width: 690px) {
 	#cover {
-		min-height: 710px;
+		min-height: 770px;
 	}
 
 	#juego_txt {
@@ -664,6 +733,11 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+	#cover {
+		min-height: 590px;
+	}
+
+
 	#table-price {
 		width: 90%;
 	}
@@ -679,7 +753,7 @@ a {
 
 @media screen and (max-width: 540px) {
 	#cover {
-		min-height: 450px;
+		min-height: 530px;
 	}
 
 	#separador {
@@ -724,11 +798,15 @@ a {
 
 @media screen and (max-width: 420px) {
 	#cover {
-		min-height: 350px;
+		min-height: 400px;
 	}
 
 	#juego_txt {
 		font-size: 17px;
+	}
+
+	#nota {
+	    font-size: 17px;
 	}
 
 	#video-back {
