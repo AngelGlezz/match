@@ -26,7 +26,7 @@
 	visibility: hidden;
 }
 
-#content-form, #txt-tickets, .card-mov, .topnav {
+#content-form, #txt-tickets, .card-mov, .topnav, #nota {
 	display: none;
 }
 
@@ -123,6 +123,10 @@ a {
 	font-size: 20px;
 }
 
+#juego_txt b {
+	color: #f1b435;
+}
+
 #separador {
 	width: 100%;
 	height: 500px;
@@ -199,6 +203,10 @@ a {
 	color: #fff;
 	font-family: 'Condensed', sans-serif;
 	margin: 90px auto 30px auto;
+}
+
+#subtitle-section img {
+	width: 100%;
 }
 
 #txt-tickets {
